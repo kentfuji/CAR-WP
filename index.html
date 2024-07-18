@@ -152,33 +152,18 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Analysis</h2>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-4">Decomposition of Texts into Events</h3>
-          <p>
-            To analyze the text-motion alignment, we use the text annotations provided in <a href="https://github.com/EricGuo5513/HumanML3D" class="external-link" target="_blank">HumanML3D</a>.
-            We decompose the text descriptions into events using off the shelf LLM.
-          </p>
-          <center><img src="./static/images/decomposition.jpg"/></center>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-4">CAR: Chronologically Accurate Retrieval</h3>
-          <p>
-            We leverage the event descriptions to conduct a test for the chronological understanding of the motion-language models.
-            We shuffle the order of events in the text descriptions to create negative samples for the models to distinguish.
-            CAR measures the success rate of models in retrieving the description with the correct order.
-          </p>
-          <center><img src="./static/images/car.jpg"/></center>
-        </div>
-      </div>
-    </div>
     <h2 class="title is-3">Proposal</h2>
+    <h3 class="title is-4">CAR: Chronologically Accurate Retrieval</h3>
+    <div class="content">
+      <p>
+        To analyze the text-motion alignment, we use the text annotations provided in <a href="https://github.com/EricGuo5513/HumanML3D" class="external-link" target="_blank">HumanML3D</a>.
+        We decompose the text descriptions into events using off the shelf LLM.
+        We leverage the event descriptions to conduct a test for the chronological understanding of the motion-language models.
+        We shuffle the order of events in the text descriptions to create negative samples for the models to distinguish.
+        CAR measures the success rate of models in retrieving the description with the correct order.
+      </p>
+      <center><img src="./static/images/car.jpg"/></center>
+    </div>
     <h3 class="title is-4">Framework</h3>
     <div class="content">
       <p>
